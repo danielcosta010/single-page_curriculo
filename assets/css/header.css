@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.information {
+
+}
+.information p {
+    font-weight: 400;
+}
+
+.title {
+  /* white-space: pre-line; */
+  text-align: center;
+}
