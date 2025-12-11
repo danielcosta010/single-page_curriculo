@@ -7,7 +7,56 @@
   font-style: normal;
 }
 
+.colors {
+  color: #8c35ec, #bb44f0, #e554f3, #f664e4, #f974cc, #fb85b9, #fd97ae, #fea9aa,
+    #ffc9bb;
+}
+
+/* com bacground-image */
 body {
-  background-color: black;
+  background: url('/assets/img/background_abstract.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: white;
 }
+
+main {
+  padding: 1rem;
+  margin: 3rem 1rem;
+  padding: 0.5rem;
+  border: 1px solid;
+  border-radius: 1rem;
+  position: relative;
+}
+
+main::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: .5rem;
+  top: 0;
+  width: 4rem;
+  height: 4rem;
+  background-image: url("/assets/img/icones/menu.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (min-width: 748px) {
+  main {
+    max-width: 1024px;
+    margin: 2rem auto;
+  }
+}
+/* body {
+  background: 
+    radial-gradient(circle at -25% -21%, #f974cc 22%, transparent 43%),
+    radial-gradient(circle at -6% -20%, #8c35ec 23%, transparent 36%),
+    radial-gradient(ellipse at 423% 64%, #ff0100 12%, transparent 62%),
+    radial-gradient(circle at 74% 200%, #0037ff 15%, transparent 65%),
+    linear-gradient(135deg, #000000 10%, #0f0f0f 30%, #0f0e0f 50%);
+  background-attachment: fixed;
+  color: white;
+} */
