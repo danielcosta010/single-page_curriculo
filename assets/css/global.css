@@ -14,7 +14,7 @@
 
 /* com bacground-image */
 body {
-  background: url('/assets/img/background_abstract.png');
+  background: url('/assets/img/background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
