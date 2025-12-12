@@ -1,8 +1,16 @@
+/* ===========================
+   HEADER - LAYOUT PRINCIPAL
+   =========================== */
+
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+/* ===========================
+   HEADER - FOTO
+   =========================== */
 
 .photo {
   width: 200px;
@@ -10,44 +18,62 @@
   border-radius: 50%;
 }
 
+/* ===========================
+   HEADER - TÍTULO
+   =========================== */
+
+.title {
+  text-align: center;
+}
+
+/* ===========================
+   HEADER - INFORMAÇÕES
+   =========================== */
+
 .information {
   width: 100%;
+  margin-left: 2rem;
 }
+
 .information p {
   font-weight: 400;
   margin: 0.5rem;
 }
 
+/* ===========================
+   HEADER - ÍCONES NAS INFORMAÇÕES
+   =========================== */
+
 .information p::before {
   content: "";
   display: inline-block;
-  background-repeat: no-repeat;
-  background-size: contain;
-  max-width: 1rem;
   width: 1rem;
   height: 1rem;
   margin-right: 0.5rem;
-  max-width: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .information .job::before {
   background-image: url("/assets/img/icones/job.svg");
 }
+
 .information .location::before {
   background-image: url("/assets/img/icones/location.svg");
   transform: translateY(2px);
 }
+
 .information .phone::before {
   background-image: url("/assets/img/icones/phone.svg");
 }
+
 .information .email::before {
   background-image: url("/assets/img/icones/email.svg");
 }
 
-.title {
-  /* white-space: pre-line; */
-  text-align: center;
-}
+/* ===========================
+   RESPONSIVE
+   =========================== */
 
 @media screen and (min-width: 748px) {
   .header {
@@ -55,25 +81,34 @@
     margin: 1rem auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr ;
+    grid-template-rows: 1fr;
     row-gap: 2rem;
     justify-items: center;
   }
+
   .photo {
     grid-column: 1;
     grid-row: 1 / 3;
   }
+
   .title {
     grid-column: 2;
     grid-row: 1;
     justify-self: start;
     text-align: start;
   }
+
   .title span {
     display: block;
   }
+
   .information {
     grid-column: 2;
     grid-row: 2;
+    margin: 0;
+  }
+
+  .information p {
+    margin-left: 0;
   }
 }

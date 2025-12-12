@@ -1,18 +1,37 @@
+/* ===========================
+   RESET E ESTILOS BASE
+   =========================== */
+
 * {
   box-sizing: border-box;
-  font-family: "Open sans", sans-serif;
   font-family: "Libre Franklin", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
+  overflow: hidden;
 }
 
-.colors {
-  color: #8c35ec, #bb44f0, #e554f3, #f664e4, #f974cc, #fb85b9, #fd97ae, #fea9aa,
-    #ffc9bb;
+/* ===========================
+   SCROLLBAR
+   =========================== */
+
+::-webkit-scrollbar {
+  width: 1px;
 }
 
-/* com bacground-image */
+::-webkit-scrollbar-thumb {
+  background: rgba(182, 28, 123, 0.5);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(57, 4, 83, 0.8);
+}
+
+/* ===========================
+   BODY
+   =========================== */
+
 body {
   background: url('/assets/img/background.png');
   background-size: cover;
@@ -20,22 +39,29 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: white;
+  overflow: hidden;
+  height: 100vh;
 }
 
+/* ===========================
+   MAIN CONTAINER
+   =========================== */
+
 main {
-  padding: 1rem;
-  margin: 3rem 1rem;
   padding: 0.5rem;
+  margin: 3rem 1rem;
   border: 1px solid;
   border-radius: 1rem;
   position: relative;
+  height: calc(100vh - 7rem);
+  overflow-y: auto;
 }
 
 main::before {
   content: "";
   display: inline-block;
   position: absolute;
-  right: .5rem;
+  right: 0.5rem;
   top: 0;
   width: 4rem;
   height: 4rem;
@@ -44,13 +70,33 @@ main::before {
   background-size: contain;
 }
 
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
 @media screen and (min-width: 748px) {
   main {
     max-width: 1024px;
     margin: 2rem auto;
   }
 }
-/* body {
+
+/* ===========================
+   REFERÊNCIA - CORES
+   =========================== */
+
+/* 
+.colors {
+  color: #8c35ec, #bb44f0, #e554f3, #f664e4, #f974cc, #fb85b9, #fd97ae, #fea9aa, #ffc9bb;
+}
+*/
+
+/* ===========================
+   GRADIENTE ALTERNATIVO
+   =========================== */
+
+/* 
+body {
   background: 
     radial-gradient(circle at -25% -21%, #f974cc 22%, transparent 43%),
     radial-gradient(circle at -6% -20%, #8c35ec 23%, transparent 36%),
@@ -59,4 +105,5 @@ main::before {
     linear-gradient(135deg, #000000 10%, #0f0f0f 30%, #0f0e0f 50%);
   background-attachment: fixed;
   color: white;
-} */
+}
+*/
