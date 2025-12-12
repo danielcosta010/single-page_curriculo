@@ -1,0 +1,205 @@
+/* ===========================
+   ACCORDION SECTION - CONTAINER
+   =========================== */
+
+.secction-acordeon {
+  width: 90%;
+  margin: 1rem auto;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.secction-acordeon.active {
+  background-color: #55569E;
+  border: 1px solid #55569E;
+  margin-bottom: 1rem;
+}
+
+/* ===========================
+   ACCORDION BUTTON
+   =========================== */
+
+.acordeon {
+  width: 100%;
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
+  color: #fff;
+}
+
+.acordeon:hover {
+  background-color: #55569E;
+  border-color: #55569E;
+}
+
+/* ===========================
+   ACCORDION ICON
+   =========================== */
+
+.acordeon .icon {
+  transition: transform 0.3s ease;
+}
+
+.acordeon.active .icon {
+  transform: rotate(180deg);
+}
+
+/* ===========================
+   ACCORDION PANEL
+   =========================== */
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  display: grid;
+}
+
+.panel.active {
+  padding-bottom: 1rem;
+}
+
+.panel ul {
+  list-style: none;
+}
+
+/* ===========================
+   SKILLS - ÍCONES
+   =========================== */
+
+.skills-svg {
+  margin: 1rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+}
+
+/* ===========================
+   SKILLS - DESCRIÇÕES
+   =========================== */
+
+.skills-descrition {
+  margin: 1rem;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+  list-style: none;
+}
+
+.skills-descrition li {
+  font-size: 20px;
+}
+
+/* ===========================
+   EXPERIÊNCIA - LISTA
+   =========================== */
+
+.descricao {
+  margin: 0;
+  padding: 0 2.5rem 2.5rem 2.5rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.descricao li {
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-weight: 400;
+}
+
+.descricao li::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  background-image: url("../img/icones/check.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* ===========================
+   PORTFOLIO - LISTA
+   =========================== */
+
+.portfolio-list {
+  margin: 0;
+  padding: 0 1rem 1rem 1rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.portfolio-list li {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.portfolio-list li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ===========================
+   PORTFOLIO - LINKS
+   =========================== */
+
+.portfolio-list a {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.portfolio-list a:hover {
+  text-decoration: underline;
+  color: #B8B9FF;
+  background-color: rgba(85, 86, 158, 0.3);
+  transform: translateX(4px);
+}
+
+.portfolio-list svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+@media screen and (min-width: 748px) {
+  .panel {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills-svg {
+    margin: 0 0rem 0rem 4rem;
+  }
+
+  .skills-descrition {
+    margin: 0 4rem 0 0;
+  }
+}
