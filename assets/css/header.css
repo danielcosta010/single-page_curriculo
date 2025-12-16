@@ -35,16 +35,18 @@
   margin-left: 2rem;
 }
 
-.information p {
+.information a {
+  color: white;
+  display: block;
   font-weight: 400;
-  margin: 0.5rem;
+  margin: 1rem .5rem 1rem 0;
 }
 
 /* ===========================
    HEADER - ÍCONES NAS INFORMAÇÕES
    =========================== */
 
-.information p::before {
+.information p::before, a::before {
   content: "";
   display: inline-block;
   width: 1rem;

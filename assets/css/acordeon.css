@@ -63,7 +63,8 @@
 }
 
 .panel.active {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .panel ul {
@@ -78,7 +79,8 @@
   margin: 1rem;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
   list-style: none;
 }
 
@@ -196,10 +198,10 @@
   }
 
   .skills-svg {
-    margin: 0 0rem 0rem 4rem;
+    margin: 0 0 1rem 4rem;
   }
 
   .skills-descrition {
-    margin: 0 4rem 0 0;
+    margin: 0 4rem 1rem 0;
   }
 }
