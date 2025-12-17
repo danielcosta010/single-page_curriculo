@@ -24,9 +24,9 @@ function updateExperiencias(data) {
     experienciasList.innerHTML = data.professionalExperience.map(experience => 
         `
         <li>
-            <h1>${experience.name}</h1>
-            <a href="${experience.certificate}">Certificado</a>
-            <a href="${experience.project}">Projeto</a>
+            <h3>${experience.name}</h3>
+            <a href="${experience.certificate}" target='_blank'>Certificado</a>
+            <a href="${experience.project}" target='_blank'>Projeto</a>
             <p>${experience.description}</p>
         </li>
         `

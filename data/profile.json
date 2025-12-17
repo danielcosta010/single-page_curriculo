@@ -72,13 +72,13 @@
       "description": "Programando lógica com <strong>JavaScript</strong>"
     },
     {
-      "name": "Formação JavaScript Developer",
+      "name": "React com JavaScript: lidando com arquivos estáticos",
       "certificate": "https://cursos.alura.com.br/certificate/ba59c371-a8f5-4273-8c7e-9d0c268f9cf2?lang=pt_BR",
       "project": "https://react-desenvolvendo-com-js-b144.vercel.app/",
       "description": "Criando aplicações com <strong>React</strong>"
     },
     {
-      "name": "Formação JavaScript Developer",
+      "name": "Git e GitHub: repositório, commit e versões",
       "certificate": "https://cursos.alura.com.br/certificate/da59f821-660f-4bd8-9736-1808d0e2bdba?lang=pt_BR",
       "project": "https://github.com/danielcosta010",
       "description": "Versionando código com <strong>Git/Github</strong>"
