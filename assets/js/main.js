@@ -19,30 +19,25 @@ function  upadateHardSkills(data) {
     hardSkillsList.innerHTML = data.skills.hardSkills.map(skill => `<li><img src="${skill.logo}" alt="${skill.name}" ></li>`).join('');
 }
 
-function updateExperiencias(data) {
+function updateExperience(data) {
     const experienciasList = document.getElementById('experience-list');
-    experienciasList.innerHTML = data.professionalExperience.map(experience => 
-        `
-        <li>
-            <h3>${experience.name}</h3>
-            <a href="${experience.certificate}" target='_blank'>Certificado</a>
-            <a href="${experience.project}" target='_blank'>Projeto</a>
+    experienciasList.innerHTML = data.professionalExperience.map(experience =>
+        `<li>
+            <h3>${experience.name}</h3> 
+            <div>
+            <a href="${experience.certificate}"target="_blank">Certificado</a> 
+            <a href="${experience.project}" target="_blank">Projeto</a>
+            </div>
             <p>${experience.description}</p>
-        </li>
-        `
-    
-    ).join('');
+        </li>`).join('');
 }
-
-
 
 
 
 (async () => {
     const profileData = await fetchProfileData();
-    console.log(profileData);
     updateProfileData(profileData);
     upadateSoftsSkills(profileData);
     upadateHardSkills(profileData);
-    updateExperiencias(profileData);
+    updateExperience(profileData);
 })();

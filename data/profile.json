@@ -33,11 +33,11 @@
       }
     ],
     "softSkills": [
-      "Desenvolvendo interfaces com <strong>Html5</strong> e <strong>Css3",
-      "Programando lógica com <strong>JavaScript</strong>",
-      "Criando aplicações com <strong>React</strong>",
-      "Adicionado types com <strong>Typescript</strong>",
-      "Versionando código com <strong>Git/Github</strong>"
+      "Comprometimento e responsabilidade",
+      "Trabalho em equipe",
+      "Compreensão de boas práticas de codificação",
+      "Resolução de problemas",
+      "Comunicação eficaz"
     ]
   },
   "languages": [
@@ -67,7 +67,7 @@
     },
     {
       "name": "Formação JavaScript Developer",
-      "certificate": "https://hermes.dio.me/certificates/7AMJTGZM.pdf",
+      "certificate": "https://hermes.dio.me/certificates/VBHCCJBF.pdf",
       "project": "https://danielcosta010.github.io/js-developer-pokedex/",
       "description": "Programando lógica com <strong>JavaScript</strong>"
     },

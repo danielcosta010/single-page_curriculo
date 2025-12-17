@@ -56,10 +56,9 @@
    =========================== */
 
 .panel {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease-out;
-  display: grid;
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height 0.4s ease-out;
 }
 
 .panel.active {
@@ -75,7 +74,7 @@
    SKILLS - ÍCONES
    =========================== */
 .tools-ferramentas {
-  margin: 1rem
+   margin: 1rem;
 }
 
 .skills-svg {
@@ -110,32 +109,72 @@
    =========================== */
 
 .descricao {
-  margin: 0;
-  padding: 0 2.5rem 2.5rem 2.5rem;
-  display: flex;
-  flex-wrap: wrap;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
 }
 
 .descricao li {
-  margin: 0.5rem;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  font-weight: 400;
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   padding: 1rem;
+   border-left: 4px solid #B8B9FF;
+   border-radius: 0.25rem;
 }
 
-.descricao li::before {
+.descricao h3::before {
+   content: "";
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   background-image: url('/data/icones/check.svg');
+   margin-right: 0.5rem;
+   background-repeat: no-re5eat;
+   background-size: contain;
+}
+
+.descricao a::after {
   content: "";
   display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  margin-right: 0.5rem;
-  background-image: url("/data/icones/check.svg");
+  width: 20px;
+  height: 20px;
+  background-image: url('/data/icones/link.svg');
   background-repeat: no-repeat;
   background-size: contain;
 }
 
+
+.descricao li h3 {
+   margin: 0;
+   font-size: 1.1rem;
+   color: #fff;
+   display: inline-flex;
+   align-items: center;
+}
+
+.descricao li a {
+   color: #B8B9FF;
+   text-decoration: none;
+   font-size: 0.9rem;
+   transition: color 0.3s;
+   padding: 0.5rem;
+   display: inline-flex;
+   align-items: center;
+}
+
+.descricao li a:hover {
+   color: #fff;
+   text-decoration: underline;
+}
+
+.descricao li p {
+   margin: 0.5rem 0 0 0;
+   font-size: 0.95rem;
+   color: rgba(255, 255, 255, 0.9);
+}
+
+  
 /* ===========================
    PORTFOLIO - LISTA
    =========================== */
@@ -197,11 +236,26 @@
    =========================== */
 
 @media screen and (min-width: 748px) {
-  .panel {
-    grid-template-columns: 1fr 1fr;
-  }
+   .panel {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+   }
 
-  .skills-descrition {
-    margin: 0 4rem 1rem 0;
-  }
+   .skills-descrition {
+     margin: 0 4rem 1rem 0;
+   }
+
+   .portfolio-list {
+     grid-column: 1 / -1;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 1rem;
+   }
+
+   .descricao {
+     grid-column: 1 / -1;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 1rem;
+   }
 }

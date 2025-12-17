@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -10,12 +11,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link rel="stylesheet" href="./assets/css/global.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/acordeon.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -23,10 +23,13 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900&display=swap"
       rel="stylesheet"
     />
+
     <title>Curriculo Single_Page</title>
   </head>
+
   <body>
     <main>
+      <!-- HEADER -->
       <header class="header">
         <img
           src="assets/img/photo_perfil-avatar.svg"
@@ -34,14 +37,31 @@
           class="photo"
           id="photo.profile"
         />
-        <h1 class="title" >Olá, <br />sou <span id="name">Daniel Costa</span></h1>
+
+        <h1 class="title">
+          Olá, <br />sou <span id="name">Daniel Costa</span>
+        </h1>
+
         <div class="information">
           <p class="job" id="position.job">Job Carregando ...</p>
           <p class="location" id="adress.location">Location Carregando...</p>
-          <a class="phone" id="number.phone"  href="http://wa.me/5531997336350" target="_blank">Phone Carregando...</a>
-          <a class="email" id="mail.email" href="mailto:danieldca01@gmail.com">Email Carregando...</a>
+
+          <a
+            class="phone"
+            id="number.phone"
+            href="http://wa.me/5531997336350"
+            target="_blank"
+          >
+            Phone Carregando...
+          </a>
+
+          <a class="email" id="mail.email" href="mailto:danieldca01@gmail.com">
+            Email Carregando...
+          </a>
         </div>
       </header>
+
+      <!-- ACCORDEON 1 -->
       <section class="secction-acordeon">
         <button
           class="acordeon"
@@ -60,31 +80,36 @@
             />
           </svg>
         </button>
+
         <div
           class="panel"
           id="panel-1"
           role="region"
           aria-labelledby="acordeon-1"
         >
-        <div class="tools-ferramentas">
-          <h3><strong>Ferramentas:</strong></h3>
-          <ul class="skills-svg" id="hard-skills-list">
+          <div class="tools-ferramentas">
+            <h3><strong>Ferramentas:</strong></h3>
+            <ul class="skills-svg" id="hard-skills-list">
               <li>Carregando...</li>
               <li>Carregando...</li>
               <li>Carregando...</li>
             </ul>
-        </div>
-        <div class="tools-ferramentas">
-          <h3><strong>Habilidades:</strong></h3>
-          <ul class="skills-descrition" id="softs-skills-list">
-            <li>Carregando...</li>
-            <li>Carregando...</li>
-            <li>Carregando...</li>
-            <li>Carregando...</li>
-            <li>Carregando...</li>
-          </ul>
+          </div>
+
+          <div class="tools-ferramentas">
+            <h3><strong>Habilidades:</strong></h3>
+            <ul class="skills-descrition" id="softs-skills-list">
+              <li>Carregando...</li>
+              <li>Carregando...</li>
+              <li>Carregando...</li>
+              <li>Carregando...</li>
+              <li>Carregando...</li>
+            </ul>
+          </div>
         </div>
       </section>
+
+      <!-- ACCORDEON 2 -->
       <section class="secction-acordeon">
         <button
           class="acordeon"
@@ -103,16 +128,18 @@
             />
           </svg>
         </button>
+
         <div
           class="panel"
           id="panel-2"
           role="region"
           aria-labelledby="acordeon-2"
         >
-          <ul class="portfolio-list" id="portfolio">
-          </ul>
+          <ul class="portfolio-list" id="portfolio"></ul>
         </div>
       </section>
+
+      <!-- ACCORDEON 3 -->
       <section class="secction-acordeon">
         <button
           class="acordeon"
@@ -131,6 +158,7 @@
             />
           </svg>
         </button>
+
         <div
           class="panel"
           id="panel-3"
@@ -141,20 +169,14 @@
             <li>Carregando...</li>
             <li>Carregando...</li>
             <li>Carregando...</li>
-            <li>
-              <h1></h1>
-              <a href=""></a>
-              <a href=""></a>
-              <p></p>
-            </li>
           </ul>
         </div>
       </section>
     </main>
-  </body>
 
-  <script src="./assets/js/acordeon.js"></script>
-  <script src="./assets/js/apiGithub.js"></script>
-  <script src="./assets/js/apiDados.js"></script>
-  <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/acordeon.js"></script>
+    <script src="./assets/js/apiGithub.js"></script>
+    <script src="./assets/js/apiDados.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>

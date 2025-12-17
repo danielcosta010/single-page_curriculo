@@ -46,12 +46,32 @@
    HEADER - ÍCONES NAS INFORMAÇÕES
    =========================== */
 
+.information a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  margin: 0px 0px 16px 0px;
+}
+
+.information a:hover {
+  text-decoration: underline;
+}
+
 .information p::before, a::before {
   content: "";
   display: inline-block;
   width: 1rem;
   height: 1rem;
   margin-right: 0.5rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.information a::after {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.3rem;
+  background-image: url("/data/icones/link.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
