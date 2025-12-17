@@ -57,20 +57,20 @@
 }
 
 .information .job::before {
-  background-image: url("/assets/img/icones/job.svg");
+  background-image: url("/data/icones/job.svg");
 }
 
 .information .location::before {
-  background-image: url("/assets/img/icones/location.svg");
+  background-image: url("/data/icones/location.svg");
   transform: translateY(2px);
 }
 
 .information .phone::before {
-  background-image: url("/assets/img/icones/phone.svg");
+  background-image: url("/data/icones/phone.svg");
 }
 
 .information .email::before {
-  background-image: url("/assets/img/icones/email.svg");
+  background-image: url("/data/icones/email.svg");
 }
 
 /* ===========================
