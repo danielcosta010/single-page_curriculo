@@ -8,28 +8,28 @@
   "skills": {
     "hardSkills": [
       {
-        "name": "Nodejs",
+        "name": "Html-5",
         "logo": "https://raw.githubusercontent.com/danielcosta010/single-page_curriculo/15714555688861271f35f28aee378b350c352d08/data/icones/html-5.svg"
       },
       {
-        "name": "Java",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/java.png"
+        "name": "Css-3",
+        "logo": "https://raw.githubusercontent.com/danielcosta010/single-page_curriculo/15714555688861271f35f28aee378b350c352d08/data/icones/css.svg"
       },
       {
-        "name": "Angular",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/angular.png"
+        "name": "JavaScript",
+        "logo": "https://raw.githubusercontent.com/danielcosta010/single-page_curriculo/15714555688861271f35f28aee378b350c352d08/data/icones/js.svg"
       },
       {
         "name": "React",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/react.png"
+        "logo": "https://https://raw.githubusercontent.com/danielcosta010/single-page_curriculo/15714555688861271f35f28aee378b350c352d08/data/icones/react.svg"
       },
       {
-        "name": "Mongodb",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/mongodb.png"
+        "name": "Git/Github",
+        "logo": "https://raw.githubusercontent.com/danielcosta010/single-page_curriculo/15714555688861271f35f28aee378b350c352d08/data/icones/github.svg"
       },
       {
-        "name": "Postgresql",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png"
+        "name": "TypeScript",
+        "logo": "https://raw.githubusercontent.com/danielcosta010/single-page_curriculo/15714555688861271f35f28aee378b350c352d08/data/icones/typescript.svg"
       }
     ],
     "softSkills": [
