@@ -74,14 +74,20 @@
 /* ===========================
    SKILLS - ÍCONES
    =========================== */
+.tools-ferramentas {
+  margin: 1rem
+}
 
 .skills-svg {
-  margin: 1rem;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   list-style: none;
+}
+.skills-svg img {
+  width: 64px;
+  height: 64px;
 }
 
 /* ===========================
@@ -93,7 +99,6 @@
   padding: 0;
   display: grid;
   gap: 10px;
-  list-style: none;
 }
 
 .skills-descrition li {
@@ -107,7 +112,6 @@
 .descricao {
   margin: 0;
   padding: 0 2.5rem 2.5rem 2.5rem;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
@@ -127,7 +131,7 @@
   width: 1rem;
   height: 1rem;
   margin-right: 0.5rem;
-  background-image: url("../img/icones/check.svg");
+  background-image: url("/data/icones/check.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -195,10 +199,6 @@
 @media screen and (min-width: 748px) {
   .panel {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .skills-svg {
-    margin: 0 0 1rem 4rem;
   }
 
   .skills-descrition {

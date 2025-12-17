@@ -16,7 +16,22 @@ function upadateSoftsSkills(data) {
 
 function  upadateHardSkills(data) {
     const hardSkillsList = document.getElementById('hard-skills-list');
-    hardSkillsList.innerHTML = data.skills.hardSkills.map(skill => `<li><img src="${skill.logo}" alt="${skill.name}"></li>`).join('');
+    hardSkillsList.innerHTML = data.skills.hardSkills.map(skill => `<li><img src="${skill.logo}" alt="${skill.name}" ></li>`).join('');
+}
+
+function updateExperiencias(data) {
+    const experienciasList = document.getElementById('experience-list');
+    experienciasList.innerHTML = data.professionalExperience.map(experience => 
+        `
+        <li>
+            <h1>${experience.name}</h1>
+            <a href="${experience.certificate}">Certificado</a>
+            <a href="${experience.project}">Projeto</a>
+            <p>${experience.description}</p>
+        </li>
+        `
+    
+    ).join('');
 }
 
 
@@ -29,4 +44,5 @@ function  upadateHardSkills(data) {
     updateProfileData(profileData);
     upadateSoftsSkills(profileData);
     upadateHardSkills(profileData);
+    updateExperiencias(profileData);
 })();

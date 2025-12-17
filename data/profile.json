@@ -60,19 +60,34 @@
   ],
   "professionalExperience": [
     {
-      "name": "Arquiteto de software / S3 BANK",
-      "period": "2022 - até o momento",
-      "description": "É um prazer trabalhar ao lado de tantos profissionais excepcionais e construir tantas inovações de mercado."
+      "name": "Formação HTML5 CSS3",
+      "certificate": "https://cursos.alura.com.br/degree/certificate/76866a32-8b07-452c-8365-1065ae384793",
+      "project": "https://danielcosta010.github.io/portfolio/index.html#cursos",
+      "description": "Desenvolvendo interfaces com <strong>Html5</strong> e <strong>Css3"
     },
     {
-      "name": "Software Engineering Lead / DIO",
-      "period": "2021 - 2022",
-      "description": "Foi um grande prazer fazer parte deste time fantástico e poder contribuir com a transformação de tantas vidas."
+      "name": "Formação JavaScript Developer",
+      "certificate": "https://hermes.dio.me/certificates/7AMJTGZM.pdf",
+      "project": "https://danielcosta010.github.io/js-developer-pokedex/",
+      "description": "Programando lógica com <strong>JavaScript</strong>"
     },
     {
-      "name": "CEO / Brain Machine",
-      "period": "2016 - 2021",
-      "description": "Anos incríveis ao lado de pessoas maravilhosas ajudando muitas empresas por todo o mundo."
+      "name": "Formação JavaScript Developer",
+      "certificate": "https://cursos.alura.com.br/certificate/ba59c371-a8f5-4273-8c7e-9d0c268f9cf2?lang=pt_BR",
+      "project": "https://react-desenvolvendo-com-js-b144.vercel.app/",
+      "description": "Criando aplicações com <strong>React</strong>"
+    },
+    {
+      "name": "Formação JavaScript Developer",
+      "certificate": "https://cursos.alura.com.br/certificate/da59f821-660f-4bd8-9736-1808d0e2bdba?lang=pt_BR",
+      "project": "https://github.com/danielcosta010",
+      "description": "Versionando código com <strong>Git/Github</strong>"
+    },
+    {
+      "name": "React com TypeScript",
+      "certificate": "https://cursos.alura.com.br/certificate/fde56af5-1b01-4da5-9cb8-932b40bcf805?lang=pt_BR",
+      "project": "https://react-migrando-ts.vercel.app/",
+      "description": "Adicionado types com <strong>Typescript</strong"
     }
   ]
 }
