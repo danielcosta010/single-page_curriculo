@@ -16,10 +16,12 @@ async function buscaRepositorios() {
     const data = await response.json();
 
     const portfolio = document.getElementById("portfolio");
-
+    
+    // Achei melgor tratar o erro de limit do github
+    // Para evitar colocar o token no front-end
     // Se o GitHub bloquear, data NÃO será um array
     if (!Array.isArray(data)) {
-      console.warn("GitHub API limit reached ou erro:", data.message);
+      console.warn("GitHub API limite de reached ou erro:", data.message);
       return; // evita quebrar o site
     }
 
