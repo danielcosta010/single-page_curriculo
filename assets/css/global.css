@@ -65,7 +65,7 @@ main::before {
   top: 0;
   width: 4rem;
   height: 4rem;
-  background-image: url("/data/icones/menu.svg");
+  background-image: url("../data/icones/menu.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }

@@ -128,7 +128,7 @@
    display: inline-block;
    width: 15px;
    height: 15px;
-   background-image: url('/data/icones/check.svg');
+   background-image: url('../../data/icones/arrow.svg');
    margin-right: 0.5rem;
    background-repeat: no-re5eat;
    background-size: contain;
@@ -139,7 +139,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url('/data/icones/link.svg');
+  background-image: url('../../data/icones/link.svg');
   background-repeat: no-repeat;
   background-size: contain;
 }
