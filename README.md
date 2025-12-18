@@ -1,4 +1,4 @@
-# 📱 Portfólio Single Page                                      [Acesse o site ↗️](https://danielcosta010.github.io/single-page_curriculo/){:target="_blank"}
+# 📱 Portfólio Single Page  &nbsp; &nbsp; <a href="https://danielcosta010.github.io/single-page_curriculo/" target="_blank" rel="noopener noreferrer">Acesse o site↗️</a>
 
 Portfólio responsivo com acordeões interativos, integração com GitHub API e dados dinâmicos.
 
