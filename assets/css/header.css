@@ -71,26 +71,26 @@
   width: 1rem;
   height: 1rem;
   margin-left: 0.3rem;
-  background-image: url("../data/icones/menu.svg");
+  background-image: url("../../data/icones/link.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .information .job::before {
-  background-image: url("../data/icones/job.svg");
+  background-image: url("../../data/icones/job.svg");
 }
 
 .information .location::before {
-  background-image: url("../data/icones/location.svg");
+  background-image: url("../../data/icones/location.svg");
   transform: translateY(2px);
 }
 
 .information .phone::before {
-  background-image: url("../data/icones/phone.svg");
+  background-image: url("../../data/icones/phone.svg");
 }
 
 .information .email::before {
-  background-image: url("../data/icones/email.svg");
+  background-image: url("../../data/icones/email.svg");
 }
 
 /* ===========================
