@@ -181,7 +181,7 @@
 
 .portfolio-list {
   margin: 0;
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1rem 1rem 0;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -189,7 +189,6 @@
 }
 
 .portfolio-list li {
-  padding: 0.5rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -206,7 +205,6 @@
    =========================== */
 
 .portfolio-list a {
-  padding: 0.5rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -258,4 +256,4 @@
      grid-template-columns: repeat(2, 1fr);
      gap: 1rem;
    }
-}
+ }
